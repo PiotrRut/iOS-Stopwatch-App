@@ -53,7 +53,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         timeLabel.text = String(counter) // add the counter to the label made using the storyboard
-        stopButton.isEnabled = false
+        stopButton.isEnabled = false // disable the stop button upon launch
     }
     
     
