@@ -57,6 +57,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="resetButton" destination="yQw-dT-egt" id="faE-xF-ngh"/>
                         <outlet property="startButton" destination="iWt-fC-o6K" id="4D5-jB-hLD"/>
                         <outlet property="stopButton" destination="ROa-RJ-EBV" id="1YJ-mc-WnF"/>
                         <outlet property="timeLabel" destination="vvN-1f-F5h" id="KWK-hS-dNv"/>
