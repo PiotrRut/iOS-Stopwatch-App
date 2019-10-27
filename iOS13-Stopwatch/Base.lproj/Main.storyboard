@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait" appearance="dark"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="iOS13_Stopwatch" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="MjX-Ka-zbp">
+                                <rect key="frame" x="128.66666666666666" y="307.33333333333331" width="117.66666666666666" height="197.33333333333331"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vvN-1f-F5h">
+                                        <rect key="frame" x="0.0" y="0.0" width="117.66666666666667" height="41"/>
+                                        <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="41"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iWt-fC-o6K">
+                                        <rect key="frame" x="0.0" y="71" width="117.66666666666667" height="22"/>
+                                        <state key="normal" title="  START" image="play" catalog="system">
+                                            <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="startTimer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tc3-Bl-op9"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ROa-RJ-EBV">
+                                        <rect key="frame" x="0.0" y="123" width="117.66666666666667" height="22"/>
+                                        <state key="normal" title="  STOP" image="xmark" catalog="system"/>
+                                        <connections>
+                                            <action selector="stopTimer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AFA-Kk-6bk"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yQw-dT-egt">
+                                        <rect key="frame" x="0.0" y="175" width="117.66666666666667" height="22.333333333333343"/>
+                                        <state key="normal" title="  RESET" image="gobackward" catalog="system"/>
+                                        <connections>
+                                            <action selector="resetTimer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="46t-Z0-V8w"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <constraints>
+                            <constraint firstItem="MjX-Ka-zbp" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="8IT-LQ-F9G"/>
+                            <constraint firstItem="MjX-Ka-zbp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JUB-OH-1LL"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="startButton" destination="iWt-fC-o6K" id="4D5-jB-hLD"/>
+                        <outlet property="stopButton" destination="ROa-RJ-EBV" id="1YJ-mc-WnF"/>
+                        <outlet property="timeLabel" destination="vvN-1f-F5h" id="KWK-hS-dNv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="117.85714285714285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="gobackward" catalog="system" width="60" height="64"/>
+        <image name="play" catalog="system" width="60" height="64"/>
+        <image name="xmark" catalog="system" width="64" height="56"/>
+    </resources>
+</document>
