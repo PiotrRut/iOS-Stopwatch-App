@@ -42,7 +42,7 @@ class ViewController: UIViewController {
         stopButton.isEnabled = false // and the stop button will be grayed out
         resetButton.isEnabled = true
         
-        timer.invalidate()  //invalidate is a function of Apple defined class NSTimer that stops the timer
+        timer.invalidate()  //Apple defined function of class NSTimer that stops the timer at its current value
         isRunning = false
     }
     
@@ -68,10 +68,5 @@ class ViewController: UIViewController {
     }
     
     
-
-
-    
-
-
 }
 
