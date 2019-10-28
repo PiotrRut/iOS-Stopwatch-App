@@ -1,4 +1,4 @@
-# iOS 13 Stopwatch App
+# iOS 13 Stopwatch App :stopwatch:
 
 This is a very simple and very clean stopwatch app that I wrote in Swift as one of my first iOS projects. The idea of the app is simple, and it is based around the NSTimer interface provided by Apple. 
 
@@ -8,6 +8,6 @@ As per today I have no plans of releasing this app on the AppStore as it is just
 ## What I'm working on
 Currently in the works is:
 * A cleaner UI
-* Haptic feedback using the Taptic Engine indicating evert passed minute
+* Haptic feedback using the Taptic Engine indicating evert passed minute :white_check_mark:
 * Ability to run in the background and send notification when a certain ammount of time has passed,  
 like " 20 minutes passed "
