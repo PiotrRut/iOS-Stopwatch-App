@@ -6,7 +6,7 @@ The interface consists of three buttons: Start, Stop and Restart. Whenever the t
 
 ## What I'm working on
 Currently in the works is:
-* A clearner UI
+* A cleaner UI
 * Haptic feedback using the Taptic Engine indicating evert passed minute
 * Ability to run in the background and send notification when a certain ammount of time has passed,  
 like " 20 minutes passed "
