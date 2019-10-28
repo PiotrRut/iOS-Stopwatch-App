@@ -16,14 +16,32 @@ class ViewController: UIViewController {
     @IBOutlet weak var resetButton: UIButton!
     
     
-    var counter = 00.00 // intialise timer to default value 0
+    var counter = 0.0 // intialise timer to default value 0
     var timer = Timer()
     var isRunning = false // this boolean is used to check whether the timer is running or not
     let buttonPress = UISelectionFeedbackGenerator() // creating new haptic feedback generator from UIKit
     
-    @objc func UpdateTimer() {
-        counter = counter + 0.1
-        timeLabel.text = String(format: "%.1f", counter)
+    @objc func timerRun() {
+        counter += 0.1
+        
+        let counterFloor = Int(floor(counter))
+        let hours = counterFloor / 3600
+        
+        let minutes = (counterFloor % 3600) / 60
+        var minutesDisplay = "\(minutes)"
+        if minutes < 10 {
+            minutesDisplay = "0\(minutes)"
+        }
+        
+        let seconds = (counterFloor % 3600) % 60
+        var secondsDisplay = "\(seconds)"
+        if seconds < 10 {
+            secondsDisplay = "0\(seconds)"
+        }
+        
+        let miliseconds = String(format: "%.1f", counter).components(separatedBy: ".").last!
+        
+        timeLabel.text = "\(hours):\(minutesDisplay):\(secondsDisplay).\(miliseconds)"
     }
     
     @IBAction func startTimer(_ sender: Any) {
@@ -32,7 +50,7 @@ class ViewController: UIViewController {
         stopButton.isEnabled = true // and the pause button will be enabled
         resetButton.isEnabled = false
         
-        timer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(UpdateTimer), userInfo: nil, repeats: true)
+        timer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(timerRun), userInfo: nil, repeats: true)
         isRunning = true
     }
     
@@ -53,15 +71,14 @@ class ViewController: UIViewController {
         
         timer.invalidate()
         isRunning = false
-        counter = 00.00
-        timeLabel.text = String(counter)
+        counter = 0.0
+        timeLabel.text = "0:00:00.0"
         resetButton.isEnabled = false
     }
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        timeLabel.text = String(counter) // add the counter to the label made using the storyboard
         stopButton.isEnabled = false // disable the stop button upon launch
         resetButton.isEnabled = false
         
