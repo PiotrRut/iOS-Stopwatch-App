@@ -8,6 +8,6 @@ As per today I have no plans of releasing this app on the AppStore as it is just
 ## :computer: What I'm working on
 Currently in the works is:
 - [ ] A cleaner UI
-- [x] Haptic feedback using the Taptic Engine indicating evert passed minute
+- [x] Haptic feedback using the Taptic Engine indicating evert passed minute (requires iPhone 7 or newer)
 - [ ] Ability to run in the background and send notification when a certain ammount of time has passed
 - [ ] Saving lap times 
