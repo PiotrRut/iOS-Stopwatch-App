@@ -10,3 +10,4 @@ Currently in the works is:
 - [ ] A cleaner UI
 - [x] Haptic feedback using the Taptic Engine indicating evert passed minute
 - [ ] Ability to run in the background and send notification when a certain ammount of time has passed
+- [ ] Saving lap times 
