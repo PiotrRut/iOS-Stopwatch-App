@@ -26,6 +26,10 @@ class ViewController: UIViewController {
         
         let counterFloor = Int(floor(counter))
         let hours = counterFloor / 3600
+        var hoursDisplay = "\(hours)"
+        if hours < 10 {
+            hoursDisplay = "0\(hours)"
+        }
         
         let minutes = (counterFloor % 3600) / 60
         var minutesDisplay = "\(minutes)"
@@ -41,7 +45,7 @@ class ViewController: UIViewController {
         
         let miliseconds = String(format: "%.1f", counter).components(separatedBy: ".").last!
         
-        timeLabel.text = "\(hours):\(minutesDisplay):\(secondsDisplay).\(miliseconds)"
+        timeLabel.text = "\(hoursDisplay):\(minutesDisplay):\(secondsDisplay).\(miliseconds)"
     }
     
     @IBAction func startTimer(_ sender: Any) {
@@ -72,7 +76,7 @@ class ViewController: UIViewController {
         timer.invalidate()
         isRunning = false
         counter = 0.0
-        timeLabel.text = "0:00:00.0"
+        timeLabel.text = "00:00:00.0"
         resetButton.isEnabled = false
     }
     
