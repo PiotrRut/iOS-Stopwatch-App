@@ -20,10 +20,13 @@ class ViewController: UIViewController {
     var timer = Timer()
     var isRunning = false // this boolean is used to check whether the timer is running or not
     let buttonPress = UISelectionFeedbackGenerator() // creating new haptic feedback generator from UIKit
+    let minutePassed = UIImpactFeedbackGenerator(style: .light) // haptic feedback generator for passed minutes
+    
     
     @objc func timerRun() {
         counter += 0.1
-        // formatting the time to the HH:MM:SS.S format
+        
+//      formatting the time to the HH:MM:SS.S format
         let counterFloor = Int(floor(counter))
         let hours = counterFloor / 3600
         var hoursDisplay = "\(hours)"
@@ -43,11 +46,16 @@ class ViewController: UIViewController {
             secondsDisplay = "0\(seconds)"
         }
         
-        let miliseconds = String(format: "%.1f", counter).components(separatedBy: ".").last!
+//      generating haptic feedback for every minute passed
+        if secondsDisplay == "00" && minutes >= 1 {
+            minutePassed.impactOccurred()
+        }
         
+        let miliseconds = String(format: "%.1f", counter).components(separatedBy: ".").last!
         timeLabel.text = "\(hoursDisplay):\(minutesDisplay):\(secondsDisplay).\(miliseconds)"
     }
     
+//  start button functionality
     @IBAction func startTimer(_ sender: Any) {
         buttonPress.selectionChanged() // haptic feedback upon button press
         startButton.isEnabled = false // if the timer is running, the start button will be grayed out
@@ -58,6 +66,7 @@ class ViewController: UIViewController {
         isRunning = true
     }
     
+//  stop button functionality
     @IBAction func stopTimer(_ sender: Any) {
         buttonPress.selectionChanged()
         startButton.isEnabled = true // if the timer is stopped, the start button will be enable as a resume button
@@ -68,6 +77,7 @@ class ViewController: UIViewController {
         isRunning = false
     }
     
+//  reset button functionality
     @IBAction func resetTimer(_ sender: Any) {
         buttonPress.selectionChanged()
         startButton.isEnabled = true
