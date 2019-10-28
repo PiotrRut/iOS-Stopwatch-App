@@ -23,7 +23,7 @@ class ViewController: UIViewController {
     
     @objc func timerRun() {
         counter += 0.1
-        
+        // formatting the time to the HH:MM:SS.S format
         let counterFloor = Int(floor(counter))
         let hours = counterFloor / 3600
         var hoursDisplay = "\(hours)"
