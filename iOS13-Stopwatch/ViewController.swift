@@ -26,7 +26,7 @@ class ViewController: UIViewController {
     @objc func timerRun() {
         counter += 0.1
         
-//      formatting the time to the HH:MM:SS.S format
+        // formatting the time to the HH:MM:SS.S format
         let counterFloor = Int(floor(counter))
         let hours = counterFloor / 3600
         var hoursDisplay = "\(hours)"
@@ -46,7 +46,7 @@ class ViewController: UIViewController {
             secondsDisplay = "0\(seconds)"
         }
         
-//      generating haptic feedback for every minute passed
+        // generating haptic feedback for every minute passed
         if seconds == 0 && minutes >= 1 {
             minutePassed.impactOccurred()
         }
@@ -55,7 +55,7 @@ class ViewController: UIViewController {
         timeLabel.text = "\(hoursDisplay):\(minutesDisplay):\(secondsDisplay).\(miliseconds)"
     }
     
-//  start button functionality
+    // start button functionality
     @IBAction func startTimer(_ sender: Any) {
         buttonPress.selectionChanged() // haptic feedback upon button press
         startButton.isEnabled = false // if the timer is running, the start button will be grayed out
@@ -66,18 +66,18 @@ class ViewController: UIViewController {
         isRunning = true
     }
     
-//  stop button functionality
+    // stop button functionality
     @IBAction func stopTimer(_ sender: Any) {
         buttonPress.selectionChanged()
         startButton.isEnabled = true // if the timer is stopped, the start button will be enable as a resume button
         stopButton.isEnabled = false // and the stop button will be grayed out
         resetButton.isEnabled = true
         
-        timer.invalidate()  //Apple defined function of class NSTimer that stops the timer at its current value
+        timer.invalidate() // Apple defined function of class NSTimer that stops the timer at its current value
         isRunning = false
     }
     
-//  reset button functionality
+    // reset button functionality
     @IBAction func resetTimer(_ sender: Any) {
         buttonPress.selectionChanged()
         startButton.isEnabled = true
@@ -90,7 +90,7 @@ class ViewController: UIViewController {
         resetButton.isEnabled = false
     }
     
-
+    // called after the controller's view is loaded into memory
     override func viewDidLoad() {
         super.viewDidLoad()
         stopButton.isEnabled = false // disable the stop button upon launch
