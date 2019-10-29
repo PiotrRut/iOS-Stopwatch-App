@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B5A1D80236891A400C00126 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5A1D7F236891A400C00126 /* SceneDelegate.swift */; };
 		3BBAFFEE2366165600FCA8BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBAFFED2366165600FCA8BA /* AppDelegate.swift */; };
-		3BBAFFF02366165600FCA8BA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBAFFEF2366165600FCA8BA /* SceneDelegate.swift */; };
 		3BBAFFF22366165600FCA8BA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBAFFF12366165600FCA8BA /* ViewController.swift */; };
 		3BBAFFF52366165600FCA8BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BBAFFF32366165600FCA8BA /* Main.storyboard */; };
 		3BBAFFF72366165800FCA8BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BBAFFF62366165800FCA8BA /* Assets.xcassets */; };
@@ -16,9 +16,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3B5A1D7F236891A400C00126 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = SOURCE_ROOT; };
 		3BBAFFEA2366165600FCA8BA /* iOS13-Stopwatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS13-Stopwatch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BBAFFED2366165600FCA8BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3BBAFFEF2366165600FCA8BA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		3BBAFFF12366165600FCA8BA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3BBAFFF42366165600FCA8BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3BBAFFF62366165800FCA8BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -56,8 +56,8 @@
 		3BBAFFEC2366165600FCA8BA /* iOS13-Stopwatch */ = {
 			isa = PBXGroup;
 			children = (
+				3B5A1D7F236891A400C00126 /* SceneDelegate.swift */,
 				3BBAFFED2366165600FCA8BA /* AppDelegate.swift */,
-				3BBAFFEF2366165600FCA8BA /* SceneDelegate.swift */,
 				3BBAFFF12366165600FCA8BA /* ViewController.swift */,
 				3BBAFFF32366165600FCA8BA /* Main.storyboard */,
 				3BBAFFF62366165800FCA8BA /* Assets.xcassets */,
@@ -140,7 +140,7 @@
 			files = (
 				3BBAFFF22366165600FCA8BA /* ViewController.swift in Sources */,
 				3BBAFFEE2366165600FCA8BA /* AppDelegate.swift in Sources */,
-				3BBAFFF02366165600FCA8BA /* SceneDelegate.swift in Sources */,
+				3B5A1D80236891A400C00126 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -235,7 +235,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -289,7 +289,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
