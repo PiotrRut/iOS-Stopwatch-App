@@ -7,7 +7,7 @@ The interface consists of three buttons: Start, Stop and Restart. Whenever the t
 As per today I have no plans of releasing this app on the AppStore as it is just a side project for me to enjoy and practice Swift.
 
 ## :computer: What I'm working on
-Currently in the works is:
+In no particular order:
 - [ ] A cleaner UI
 - [x] Haptic feedback using the Taptic Engine indicating every passed minute (requires iPhone 7 or newer)
 - [ ] Ability to run in the background and send notification when a certain ammount of time has passed

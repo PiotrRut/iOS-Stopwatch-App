@@ -57,8 +57,8 @@
                                 <color key="backgroundColor" red="0.85449714467005078" green="0.58751114679715699" blue="0.18942692330043925" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00:00.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vvN-1f-F5h">
-                                <rect key="frame" x="78.333333333333329" y="371.66666666666669" width="218.66666666666669" height="68.666666666666686"/>
-                                <fontDescription key="fontDescription" name="KohinoorTelugu-Regular" family="Kohinoor Telugu" pointSize="49"/>
+                                <rect key="frame" x="62.333333333333329" y="374.66666666666669" width="250.66666666666669" height="62.666666666666686"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="53"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
