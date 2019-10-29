@@ -47,7 +47,7 @@ class ViewController: UIViewController {
         }
         
 //      generating haptic feedback for every minute passed
-        if secondsDisplay == "00" && minutes >= 1 {
+        if seconds == 0 && minutes >= 1 {
             minutePassed.impactOccurred()
         }
         
