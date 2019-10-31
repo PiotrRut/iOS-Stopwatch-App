@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3B5A1D84236892C700C00126 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5A1D83236892C700C00126 /* SceneDelegate.swift */; };
+		3B9D271A236B878C0013B13D /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 3B9D2719236B878C0013B13D /* README.md */; };
 		3BBAFFEE2366165600FCA8BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBAFFED2366165600FCA8BA /* AppDelegate.swift */; };
 		3BBAFFF22366165600FCA8BA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBAFFF12366165600FCA8BA /* ViewController.swift */; };
 		3BBAFFF52366165600FCA8BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BBAFFF32366165600FCA8BA /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 
 /* Begin PBXFileReference section */
 		3B5A1D83236892C700C00126 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		3B9D2719236B878C0013B13D /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		3BBAFFEA2366165600FCA8BA /* iOS13-Stopwatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS13-Stopwatch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BBAFFED2366165600FCA8BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3BBAFFF12366165600FCA8BA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -40,6 +42,7 @@
 		3BBAFFE12366165600FCA8BA = {
 			isa = PBXGroup;
 			children = (
+				3B9D2719236B878C0013B13D /* README.md */,
 				3BBAFFEC2366165600FCA8BA /* iOS13-Stopwatch */,
 				3BBAFFEB2366165600FCA8BA /* Products */,
 			);
@@ -127,6 +130,7 @@
 			files = (
 				3BBAFFFA2366165800FCA8BA /* LaunchScreen.storyboard in Resources */,
 				3BBAFFF72366165800FCA8BA /* Assets.xcassets in Resources */,
+				3B9D271A236B878C0013B13D /* README.md in Resources */,
 				3BBAFFF52366165600FCA8BA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -173,7 +177,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 53GT4DF97F;
 				INFOPLIST_FILE = "iOS13-Stopwatch/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -306,7 +310,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 53GT4DF97F;
 				INFOPLIST_FILE = "iOS13-Stopwatch/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
