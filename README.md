@@ -1,4 +1,5 @@
 # iOS Stopwatch App
+![](https://img.shields.io/badge/Swift-5.1-orange)
 
 This is a very simple and  clean stopwatch app that I wrote in Swift as one of my first iOS projects. The idea of the app is simple, and it is based around the NSTimer interface provided by Apple. It is compatible with all iPhone models running iOS 11 or newer.
 
