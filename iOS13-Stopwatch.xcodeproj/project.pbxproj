@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		34FBE191C141FC0BAA83A48F /* Pods_iOS13_Stopwatch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7742869FF0BCB13479058D35 /* Pods_iOS13_Stopwatch.framework */; };
 		3B5A1D84236892C700C00126 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5A1D83236892C700C00126 /* SceneDelegate.swift */; };
 		3B86BD022379D3D800ACC2EE /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 3B86BD012379D3D800ACC2EE /* Podfile */; };
 		3B9D271A236B878C0013B13D /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 3B9D2719236B878C0013B13D /* README.md */; };
@@ -16,7 +17,6 @@
 		3BBAFFF72366165800FCA8BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BBAFFF62366165800FCA8BA /* Assets.xcassets */; };
 		3BBAFFFA2366165800FCA8BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BBAFFF82366165800FCA8BA /* LaunchScreen.storyboard */; };
 		3BFF3B782379D66C00B746AF /* PMSuperButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFF3B772379D66C00B746AF /* PMSuperButton.swift */; };
-		F39845D0E7743CCEDAD8F791 /* Pods_iOS13_Stopwatch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E806722E3F12E3E459DE5DF /* Pods_iOS13_Stopwatch.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,9 +31,9 @@
 		3BBAFFF92366165800FCA8BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3BBAFFFB2366165800FCA8BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3BFF3B772379D66C00B746AF /* PMSuperButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PMSuperButton.swift; sourceTree = "<group>"; };
-		6E806722E3F12E3E459DE5DF /* Pods_iOS13_Stopwatch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOS13_Stopwatch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7D2C52E49027D7D926726F2C /* Pods-iOS13-Stopwatch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS13-Stopwatch.debug.xcconfig"; path = "Target Support Files/Pods-iOS13-Stopwatch/Pods-iOS13-Stopwatch.debug.xcconfig"; sourceTree = "<group>"; };
-		F555E2264E19DDE420BB853C /* Pods-iOS13-Stopwatch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS13-Stopwatch.release.xcconfig"; path = "Target Support Files/Pods-iOS13-Stopwatch/Pods-iOS13-Stopwatch.release.xcconfig"; sourceTree = "<group>"; };
+		7742869FF0BCB13479058D35 /* Pods_iOS13_Stopwatch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOS13_Stopwatch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7FB8E35553EFF08B02A5DCB6 /* Pods-iOS13-Stopwatch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS13-Stopwatch.debug.xcconfig"; path = "Target Support Files/Pods-iOS13-Stopwatch/Pods-iOS13-Stopwatch.debug.xcconfig"; sourceTree = "<group>"; };
+		AD4ABA410E92E05FE978C6C0 /* Pods-iOS13-Stopwatch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS13-Stopwatch.release.xcconfig"; path = "Target Support Files/Pods-iOS13-Stopwatch/Pods-iOS13-Stopwatch.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,7 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F39845D0E7743CCEDAD8F791 /* Pods_iOS13_Stopwatch.framework in Frameworks */,
+				34FBE191C141FC0BAA83A48F /* Pods_iOS13_Stopwatch.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,8 +54,8 @@
 				3B9D2719236B878C0013B13D /* README.md */,
 				3BBAFFEC2366165600FCA8BA /* iOS13-Stopwatch */,
 				3BBAFFEB2366165600FCA8BA /* Products */,
-				FDFC0560F90B6B53BF85C3A8 /* Pods */,
-				C1FBF7EFBA1F552F515C2C46 /* Frameworks */,
+				A2021AE56D3F00BBB2FFEA7A /* Pods */,
+				D1FE3B5A69722B4F367D1712 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -91,21 +91,22 @@
 			path = Sources;
 			sourceTree = "<group>";
 		};
-		C1FBF7EFBA1F552F515C2C46 /* Frameworks */ = {
+		A2021AE56D3F00BBB2FFEA7A /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				6E806722E3F12E3E459DE5DF /* Pods_iOS13_Stopwatch.framework */,
+				7FB8E35553EFF08B02A5DCB6 /* Pods-iOS13-Stopwatch.debug.xcconfig */,
+				AD4ABA410E92E05FE978C6C0 /* Pods-iOS13-Stopwatch.release.xcconfig */,
 			);
-			name = Frameworks;
+			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
-		FDFC0560F90B6B53BF85C3A8 /* Pods */ = {
+		D1FE3B5A69722B4F367D1712 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				7D2C52E49027D7D926726F2C /* Pods-iOS13-Stopwatch.debug.xcconfig */,
-				F555E2264E19DDE420BB853C /* Pods-iOS13-Stopwatch.release.xcconfig */,
+				7742869FF0BCB13479058D35 /* Pods_iOS13_Stopwatch.framework */,
 			);
-			path = Pods;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,7 +257,7 @@
 /* Begin XCBuildConfiguration section */
 		3BBA00002366165800FCA8BA /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F555E2264E19DDE420BB853C /* Pods-iOS13-Stopwatch.release.xcconfig */;
+			baseConfigurationReference = AD4ABA410E92E05FE978C6C0 /* Pods-iOS13-Stopwatch.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -390,7 +391,7 @@
 		};
 		3BBAFFFF2366165800FCA8BA /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7D2C52E49027D7D926726F2C /* Pods-iOS13-Stopwatch.debug.xcconfig */;
+			baseConfigurationReference = 7FB8E35553EFF08B02A5DCB6 /* Pods-iOS13-Stopwatch.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
