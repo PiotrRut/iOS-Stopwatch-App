@@ -11,9 +11,9 @@ import UIKit
 class ViewController: UIViewController {
     
     @IBOutlet weak var timeLabel: UILabel!
-    @IBOutlet weak var startButton: UIButton!
-    @IBOutlet weak var stopButton: UIButton!
-    @IBOutlet weak var resetButton: UIButton!
+    @IBOutlet weak var startButton: PMSuperButton!
+    @IBOutlet weak var stopButton: PMSuperButton!
+    @IBOutlet weak var resetButton: PMSuperButton!
     
     
     var counter = 0.0 // intialise timer to default value 0
@@ -58,28 +58,36 @@ class ViewController: UIViewController {
     // start button functionality
     @IBAction func startTimer(_ sender: Any) {
         buttonPress.selectionChanged() // haptic feedback upon button press
+        startButton.isSelected = false
         startButton.isEnabled = false // if the timer is running, the start button will be grayed out
         stopButton.isEnabled = true // and the pause button will be enabled
         resetButton.isEnabled = false
         
         timer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(timerRun), userInfo: nil, repeats: true)
         isRunning = true
+   
+    
+        
     }
     
     // stop button functionality
     @IBAction func stopTimer(_ sender: Any) {
         buttonPress.selectionChanged()
+        stopButton.isSelected = false
         startButton.isEnabled = true // if the timer is stopped, the start button will be enable as a resume button
         stopButton.isEnabled = false // and the stop button will be grayed out
         resetButton.isEnabled = true
         
         timer.invalidate() // Apple defined function of class NSTimer that stops the timer at its current value
         isRunning = false
+        
+        
     }
     
     // reset button functionality
     @IBAction func resetTimer(_ sender: Any) {
         buttonPress.selectionChanged()
+        resetButton.isSelected = false
         startButton.isEnabled = true
         stopButton.isEnabled = false
         
@@ -88,6 +96,7 @@ class ViewController: UIViewController {
         counter = 0.0
         timeLabel.text = "00:00:00.0"
         resetButton.isEnabled = false
+        
     }
     
     // called after the controller's view is loaded into memory
@@ -95,6 +104,24 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         stopButton.isEnabled = false // disable the stop button upon launch
         resetButton.isEnabled = false
+        
+        startButton.cornerRadius = 9
+        startButton.gradientEnabled = true
+        startButton.gradientHorizontal = true
+        startButton.animatedScaleWhenSelected = 1.2
+                 
+        resetButton.cornerRadius = 9
+        resetButton.gradientEnabled = true
+        resetButton.gradientHorizontal = true
+        resetButton.animatedScaleWhenSelected = 1.2
+        
+        stopButton.cornerRadius = 9
+        stopButton.gradientEnabled = true
+        stopButton.gradientHorizontal = true
+        stopButton.animatedScaleWhenSelected = 1.2
+        
+        
+        
         
     }
     

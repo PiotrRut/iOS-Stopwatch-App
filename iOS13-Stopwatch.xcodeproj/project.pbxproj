@@ -3,21 +3,25 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		3B5A1D84236892C700C00126 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5A1D83236892C700C00126 /* SceneDelegate.swift */; };
+		3B86BD022379D3D800ACC2EE /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 3B86BD012379D3D800ACC2EE /* Podfile */; };
 		3B9D271A236B878C0013B13D /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 3B9D2719236B878C0013B13D /* README.md */; };
 		3BBAFFEE2366165600FCA8BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBAFFED2366165600FCA8BA /* AppDelegate.swift */; };
 		3BBAFFF22366165600FCA8BA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBAFFF12366165600FCA8BA /* ViewController.swift */; };
 		3BBAFFF52366165600FCA8BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BBAFFF32366165600FCA8BA /* Main.storyboard */; };
 		3BBAFFF72366165800FCA8BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BBAFFF62366165800FCA8BA /* Assets.xcassets */; };
 		3BBAFFFA2366165800FCA8BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BBAFFF82366165800FCA8BA /* LaunchScreen.storyboard */; };
+		3BFF3B782379D66C00B746AF /* PMSuperButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFF3B772379D66C00B746AF /* PMSuperButton.swift */; };
+		F39845D0E7743CCEDAD8F791 /* Pods_iOS13_Stopwatch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E806722E3F12E3E459DE5DF /* Pods_iOS13_Stopwatch.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3B5A1D83236892C700C00126 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		3B86BD012379D3D800ACC2EE /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		3B9D2719236B878C0013B13D /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		3BBAFFEA2366165600FCA8BA /* iOS13-Stopwatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS13-Stopwatch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BBAFFED2366165600FCA8BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +30,10 @@
 		3BBAFFF62366165800FCA8BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3BBAFFF92366165800FCA8BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3BBAFFFB2366165800FCA8BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3BFF3B772379D66C00B746AF /* PMSuperButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PMSuperButton.swift; sourceTree = "<group>"; };
+		6E806722E3F12E3E459DE5DF /* Pods_iOS13_Stopwatch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOS13_Stopwatch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D2C52E49027D7D926726F2C /* Pods-iOS13-Stopwatch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS13-Stopwatch.debug.xcconfig"; path = "Target Support Files/Pods-iOS13-Stopwatch/Pods-iOS13-Stopwatch.debug.xcconfig"; sourceTree = "<group>"; };
+		F555E2264E19DDE420BB853C /* Pods-iOS13-Stopwatch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS13-Stopwatch.release.xcconfig"; path = "Target Support Files/Pods-iOS13-Stopwatch/Pods-iOS13-Stopwatch.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F39845D0E7743CCEDAD8F791 /* Pods_iOS13_Stopwatch.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,6 +54,8 @@
 				3B9D2719236B878C0013B13D /* README.md */,
 				3BBAFFEC2366165600FCA8BA /* iOS13-Stopwatch */,
 				3BBAFFEB2366165600FCA8BA /* Products */,
+				FDFC0560F90B6B53BF85C3A8 /* Pods */,
+				C1FBF7EFBA1F552F515C2C46 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,6 +70,8 @@
 		3BBAFFEC2366165600FCA8BA /* iOS13-Stopwatch */ = {
 			isa = PBXGroup;
 			children = (
+				3BFF3B762379D64B00B746AF /* Sources */,
+				3B86BD012379D3D800ACC2EE /* Podfile */,
 				3B5A1D83236892C700C00126 /* SceneDelegate.swift */,
 				3BBAFFED2366165600FCA8BA /* AppDelegate.swift */,
 				3BBAFFF12366165600FCA8BA /* ViewController.swift */,
@@ -70,6 +83,31 @@
 			path = "iOS13-Stopwatch";
 			sourceTree = "<group>";
 		};
+		3BFF3B762379D64B00B746AF /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				3BFF3B772379D66C00B746AF /* PMSuperButton.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		C1FBF7EFBA1F552F515C2C46 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6E806722E3F12E3E459DE5DF /* Pods_iOS13_Stopwatch.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FDFC0560F90B6B53BF85C3A8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7D2C52E49027D7D926726F2C /* Pods-iOS13-Stopwatch.debug.xcconfig */,
+				F555E2264E19DDE420BB853C /* Pods-iOS13-Stopwatch.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,9 +115,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3BBAFFFE2366165800FCA8BA /* Build configuration list for PBXNativeTarget "iOS13-Stopwatch" */;
 			buildPhases = (
+				CB84B707967C9409B2A5072A /* [CP] Check Pods Manifest.lock */,
 				3BBAFFE62366165600FCA8BA /* Sources */,
 				3BBAFFE72366165600FCA8BA /* Frameworks */,
 				3BBAFFE82366165600FCA8BA /* Resources */,
+				4DD4EE32CE3E521E9DB13412 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -128,6 +168,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B86BD022379D3D800ACC2EE /* Podfile in Resources */,
 				3BBAFFFA2366165800FCA8BA /* LaunchScreen.storyboard in Resources */,
 				3BBAFFF72366165800FCA8BA /* Assets.xcassets in Resources */,
 				3B9D271A236B878C0013B13D /* README.md in Resources */,
@@ -137,6 +178,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4DD4EE32CE3E521E9DB13412 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iOS13-Stopwatch/Pods-iOS13-Stopwatch-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iOS13-Stopwatch/Pods-iOS13-Stopwatch-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iOS13-Stopwatch/Pods-iOS13-Stopwatch-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CB84B707967C9409B2A5072A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iOS13-Stopwatch-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3BBAFFE62366165600FCA8BA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -144,6 +227,7 @@
 			files = (
 				3BBAFFF22366165600FCA8BA /* ViewController.swift in Sources */,
 				3BBAFFEE2366165600FCA8BA /* AppDelegate.swift in Sources */,
+				3BFF3B782379D66C00B746AF /* PMSuperButton.swift in Sources */,
 				3B5A1D84236892C700C00126 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -172,6 +256,7 @@
 /* Begin XCBuildConfiguration section */
 		3BBA00002366165800FCA8BA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F555E2264E19DDE420BB853C /* Pods-iOS13-Stopwatch.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -305,6 +390,7 @@
 		};
 		3BBAFFFF2366165800FCA8BA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D2C52E49027D7D926726F2C /* Pods-iOS13-Stopwatch.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

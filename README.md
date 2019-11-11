@@ -6,8 +6,16 @@ The interface consists of three buttons: Start, Stop and Restart. Whenever the t
 
 As per today I have no plans of releasing this app on the AppStore as it is just a side project for me to enjoy and practice Swift.
 
+## :calling: Demo
+![](https://j.gifs.com/NL12lv.gif)
+
+## :open_file_folder: Dependencies, pods and libraries used
++ [PMSuperButton](https://github.com/pmusolino/PMSuperButton) - a UIButton wrapper made by [Paolo Musolino](https://github.com/pmusolino)
+
 ## :computer: What I'm working on
 In no particular order:
-- [ ] A cleaner UI
+- [x] A cleaner UI
 - [x] Haptic feedback using the Taptic Engine indicating every passed minute (requires iPhone 7 or newer)
 - [ ] Saving lap times 
+
+
