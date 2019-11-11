@@ -6,9 +6,6 @@ The interface consists of three buttons: Start, Stop and Restart. Whenever the t
 
 As per today I have no plans of releasing this app on the AppStore as it is just a side project for me to enjoy and practice Swift.
 
-## :calling: Demo
-![](https://j.gifs.com/NL12lv.gif)
-
 ## :open_file_folder: Dependencies, pods and libraries used
 + [PMSuperButton](https://github.com/pmusolino/PMSuperButton) - a UIButton wrapper made by [Paolo Musolino](https://github.com/pmusolino)
 
