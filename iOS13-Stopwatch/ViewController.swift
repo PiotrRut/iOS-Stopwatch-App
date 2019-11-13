@@ -23,6 +23,7 @@ class ViewController: UIViewController {
     let minutePassed = UIImpactFeedbackGenerator(style: .light) // haptic feedback generator for passed minutes
     
     
+    // MARK:The timer function
     @objc func timerRun() {
         counter += 0.1
         
@@ -55,7 +56,7 @@ class ViewController: UIViewController {
         timeLabel.text = "\(hoursDisplay):\(minutesDisplay):\(secondsDisplay).\(miliseconds)"
     }
     
-    // start button functionality
+    // MARK: Start button functionality
     @IBAction func startTimer(_ sender: Any) {
         buttonPress.selectionChanged() // haptic feedback upon button press
         startButton.isSelected = false
@@ -66,11 +67,9 @@ class ViewController: UIViewController {
         timer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(timerRun), userInfo: nil, repeats: true)
         isRunning = true
    
-    
-        
     }
     
-    // stop button functionality
+    // MARK: Stop button functionality
     @IBAction func stopTimer(_ sender: Any) {
         buttonPress.selectionChanged()
         stopButton.isSelected = false
@@ -81,10 +80,9 @@ class ViewController: UIViewController {
         timer.invalidate() // Apple defined function of class NSTimer that stops the timer at its current value
         isRunning = false
         
-        
     }
     
-    // reset button functionality
+    // MARK: Reset button functionality
     @IBAction func resetTimer(_ sender: Any) {
         buttonPress.selectionChanged()
         resetButton.isSelected = false
@@ -99,7 +97,7 @@ class ViewController: UIViewController {
         
     }
     
-    // called after the controller's view is loaded into memory
+    // MARK: Called after the controller's view is loaded into memory
     override func viewDidLoad() {
         super.viewDidLoad()
         stopButton.isEnabled = false // disable the stop button upon launch
@@ -119,9 +117,7 @@ class ViewController: UIViewController {
         stopButton.gradientEnabled = true
         stopButton.gradientHorizontal = true
         stopButton.animatedScaleWhenSelected = 1.2
-        
-        
-        
+          
         
     }
     
